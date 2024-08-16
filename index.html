@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuna's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+        .projects, .contact {
+            background: #e2e2e2;
+        }
+        .projects h2, .contact h2 {
+            margin-top: 0;
+        }
+        .project-item {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .skills, .experience {
+            margin-bottom: 20px;
+        }
+        .skills ul, .experience ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .experience ul li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .collapsible-content {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Karuna Kesavan Kothandath</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am Karuna Kesavan Kothandath, a data analyst with a diverse set of skills and expertise in data analysis, data processing, and biological data acquisition. I am passionate about utilizing data-driven insights to solve complex problems and drive decision-making processes. Currently, I am actively searching for new opportunities where I can leverage my skills and experience.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Analysis: Microsoft Excel, VBA, Statistics Modeling, Python, APIs, JSON, NumPy, Pandas, Matplotlib, PySpark, PyMongo, SQL, NoSQL, Postgres/PgAdmin, MongoDB,SQLAlchemy</li>
+                <li>Data Visualization: Tableau, Power BI, Leaflet, GeoJSON,Folium</li>
+                <li>Big Data & Machine Learning: Hadoop, Scikit-learn, TensorFlow, Classification, Regression, Clustering, Neural Networks, Deep Learning,Natural Language Processing</li>
+                <li>Web Technologies: HTML, CSS, JavaScript, Web Scraping</li>
+                <li>Biological Data Acquisition: Retina Image Acquisition, Optical Coherence Tomography (OCT), Scanning Laser Ophthalmoscope (SLO), 3D Confocal Imaging, Immunohistochemistry, Electron Microscopy</li>
+                <li>Version Control: GitHub, GitLab</li>
+                <li>Statistical Analysis: GraphPad Prism, R</li>
+                <li>Microsoft Office Tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li>Junior Specialist, the University of California Davis - Worked on: data processing and analysis of preclinical ophthalmic investigations,Image processing and data classification,Statistical analysis of disease models,Realtime retinal data acquisition with advanced imaging technologies (OCT and SLO),Image segmentation using an advanced graph cut approach,Ex vivo processing of retina samples and 3D confocal imaging and electron microscopy, and lab website development and content management.</li>
+                <li>IT Services, University of California Agriculture and Natural Resources  - Worked on: Ticketing and customer support,Web page designing and content editing,Workflow automation</li>
+                <li>Web designing Trainee, Aptech Computers Ltd  India - Responsibilities: Trained for website development and hosting,Involved in web projects for corporate firms,Training students for website development</li>
+                <li>Computer Instructor, Mathsminds College India - Responsibilities:Taught theory of fundamental courses of computer science for Junior college students,Provided practical training on computer assembling and hardware interfacing,Provided training on software installation and debugging</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <button class="collapsible-button">Crowdfunding Analysis</button>
+                <div class="collapsible-content">
+                <p>Crowdfunding platforms like Kickstarter and Indiegogo have been growing in success and popularity since the late 2000s. From independent content creators to famous celebrities, more and more people are using crowdfunding to launch new products and generate buzz, but not every project has found success.
+
+                    To receive funding, the project must meet or exceed an initial goal, so many organizations dedicate considerable resources looking through old projects in an attempt to discover “the trick” to finding success.<br>In this project, organized and analyzed a database of 1,000 sample projects to uncover any hidden trends.<br>
+                    The script automates several key processes:</p>
+                    <ul>
+                    <li><strong>Conditional Formatting:</strong> Applies conditional formatting to highlight key trends and anomalies in the data.</li>
+                    <li><strong>Column Creation:</strong> Dynamically creates columns for various metrics based on the data retrieved.</li>
+                    <li><strong>Pivot Tables and Stacked Column Charts:</strong>Created a pivot table that counts how many campaigns were "successful," "failed," "canceled," or are currently "live" per category</li>
+                    <li><strong>Pivot Tables and Line Graphs</strong>Created a pivot chart line graph</li>
+                    <li><strong> Crowdfunding Goal Analysis:</strong>Computed calculations of percentages for projects that were successful, failed, or were canceled per goal range and Created a line chart showing the relationship between the goal’s amount and its chances at success, failure, or cancellation.</li>       
+                    <li><strong>Statistical Analysis :</strong>Computed calculations of the mean, median, min, max, variance, and stdev using Excel formulas.<br> A brief and compelling justification of whether the mean or median better summarizes the data.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Stock Market Data Analysis with VBA</button>
+                <div class="collapsible-content">
+                <p>This project involves analyzing multiple years of stock market data using VBA in Microsoft Excel. The script automates several key processes:</p>
+                <ul>
+                    <li><strong>Retrieval of Data:</strong> The VBA script loops through quarterly stock data, extracting and storing necessary values from each row.</li>
+                    <li><strong>Column Creation:</strong> Dynamically creates columns for various metrics based on the data retrieved.</li>
+                    <li><strong>Conditional Formatting:</strong> Applies conditional formatting to highlight key trends and anomalies in the data.</li>
+                    <li><strong>Calculated Values:</strong> Computes important financial indicators such as moving averages and volatility.</li>
+                    <li><strong>Looping Across Worksheet:</strong> Efficiently processes data across multiple worksheets, consolidating and analyzing information from different periods.</li>
+                </ul>
+                <p>The VBA automation significantly reduces manual data entry and analysis time, improving accuracy and efficiency in financial reporting.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Budget Data Analysis with Python</button>
+                <div class="collapsible-content">
+                <p>Used Python script to analyze the financial records(budget data).The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Read the CSV file:</strong>Read and store the csv data as dataframes.</li>
+                    <li><strong>Data cleaning</strong></li>
+                    <li><strong>Statistical Analysis</strong></li>
+                    <li><strong>Exporting files to text format</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">School Performance Analysis with Python</button>
+                <div class="collapsible-content">
+                <p>Analyzed district-wide standardized test results in math and reading, and aggregated the data to highlight significant trends in school performance. The primary Python library used for this analysis was Pandas.<br>The key processes are:</p>
+                <ul><li><strong>Data frame merging</strong></li>
+                    <li><strong>Reshaping data</strong></li>
+                    <li><strong>Summerizing Data</strong></li>
+                    <li><strong>Missing data handling</strong></li>
+                    <li><strong>Grouping</strong></li>
+                    <li><strong>Method Chaining</strong></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Tumor treatment drug analysis</button>
+                <div class="collapsible-content">
+                <p>This project is base on skin cancer traetment study conducted on animals, Here 249 mice who were identified with SCC tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.Tables and figures needed for the technical report of the clinical study are generated using Matplotlib.<br>The key processes involved in this project are as follows:</p>
+                <ul><li><strong>Prepare the data</strong></li>
+                    <li><strong>Generate summary statistics.</strong></li>
+                    <li><strong>Create bar charts and pie charts</strong></li>
+                    <li><strong>Calculate quartiles, find outliers, and create a box plot.</strong></li>
+                    <li><strong>Create a line plot and a scatter plot.</strong></li>
+                    <li><strong>Calculate correlation and regression.</strong></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">City weather Visualization with Python API</button>
+                <div class="collapsible-content">
+                <p> Python scriptis used to visualize the weather of over 500 cities of varying distances from the equator.Main libraries used here are geoViews,pandas,Matplotlib</p>
+                <ul>
+                    <li><strong>Retriev data usin API's</strong></li>
+                    <li><strong>Generate scatter plots.</strong></li>
+                    <li><strong>Compute Linear Regression</strong></li>
+                    <li><strong> Create map visualizations with geoViews</strong></li>
+            
+                </ul>
+            </div>
+
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Common-Causes-of-Death-Analysis</button>
+                <div class="collapsible-content">
+                <p>Analyze common causes of death internationally and develop conclusions.The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Data Interception / Initial Dive</strong></li>
+                    <li><strong>Top 5 and bottom 5 Causes of Death Analysis</strong></li>
+                    <li><strong>Normalizing the Data to Show Death per Capita</strong></li>
+                    <li><strong> Checking whether foreign aid receiving affects causes of death</strong></li>
+                    <li><strong> Finding percentage of deaths in high and low income countries.</strong></li>
+                    <li><strong> Taking an In Depth Look at Two Specific High, and Low Income Nations, and Thier Top Causes of Death</strong></li>
+                    <li><strong> Geographical Anaylsis</strong></li>
+            
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">SQL Project</button>
+                <div class="collapsible-content">
+                <p>This research project involves analyzing data on individuals employed by the company during the 1980s and 1990s using SQL.The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Data Modeling:</strong>Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables</li>
+                    <li><strong>Data Engineering</strong></li>
+                    <li><strong>Data Analysis</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Climate Analysis with Python and SQLAlchemy</button>
+                <div class="collapsible-content">
+                <p>This project aims to develop an app for trip planning by conducting a climate analysis of the destination area.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>SQLAlchemy</strong></li>
+                    <li><strong>SQLAlchemy ORM</strong></li>
+                    <li><strong>Flask</strong></li>
+                    <li><strong>NumPy</strong></li>
+                    <li><strong>Pandas</strong></li>
+                    <li><strong>Matplotlib.</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">WebScraping and Data Analysis Project</button>
+                <div class="collapsible-content">
+                <p>This project involves extracting information using automated browsing with Splinter and HTML parsing with Beautiful Soup, including details from HTML tables and recurring elements such as multiple news articles on a webpage.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Automated Browsing with Splinter</strong></li>
+                    <li><strong>HTML parsing with Beautiful Soup</strong></li>
+                    <li><strong>pprint</strong></li>
+                    <li><strong>Storing the scraping results in Python data structures</strong></li>
+                    <li><strong>Pandas</strong></li>
+                    <li><strong>Matplotlib.</strong></li>
+                    <li><strong>Statistical Analysis</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Food Rating Project with NoSQL</button>
+                <div class="collapsible-content">
+                <p>This project utilizes data from the UK Food Standards Agency, which evaluates various establishments across the United Kingdom and assigns them food hygiene ratings. The goal is to analyze these ratings to assist journalists and food critics in determining where to focus their future articles.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Pymongo</strong></li>
+                    <li><strong>MongoClient</strong></li>
+                    <li><strong>pprint</strong></li>
+                    <li><strong>Regular Expressions</strong></li>
+                    <li><strong>Pandas</strong></li>
+                    <li><strong>Statistical Analysis</strong></li>
+                </ul>
+            </div>
+
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">ETL Pipeline</button>
+                <div class="collapsible-content">
+                <p>This project involves creating an ETL (Extract, Transform, Load) pipeline using Python and Pandas.It utilizes Python dictionary methods and regular expressions to efficiently extract, transform, and load data.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>PostgresSQl</strong></li>
+                    <li><strong>ERD</strong></li>
+                    <li><strong>Regular Expressions</strong></li>
+                    <li><strong>Pandas</strong></li>
+                    <li><strong>Statistical Analysis</strong></li>
+                </ul>
+            </div>
+
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Interactive Dashboard With JavaScript</button>
+                <div class="collapsible-content">
+                <p>This project aims to build an interactive dashboard to explore the biological data set, which catalogs the microbes that colonize human navels.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>HTML</strong></li>
+                    <li><strong>CSS</strong></li>
+                    <li><strong>JSON</strong></li>
+                    <li><strong>JavaScript</strong></li>
+                    <li><strong>D3.js</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Earthquake Visualization Project with Leaflet</button>
+                <div class="collapsible-content">
+                <p>This project is based on United States Geological Survey data. The aim of this project is to develop a way to visualize USGS data that will help educate the public and other government organizations, and hopefully secure more funding, on issues facing our planet.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong>Leaflet</strong></li>
+                    <li><strong>GeoJSON</strong></li>
+                    <li><strong>Layers Control</strong></li>
+                    <li><strong>HTML</strong></li>
+                    <li><strong>CSS</strong></li>
+                    <li><strong>JavaScript</strong></li>
+                    <li><strong>D3.js</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">App for California Unemployment Rate</button>
+                <div class="collapsible-content">
+                <p>This project provides an interactive web application to explore employment data for different industries and counties in California.<br>The key processes involved in this project are as follows: </p>
+                <ul>
+                    <li><strong> Flask</strong></li>
+                    <li><strong>SQLAlchemy</strong></li>
+                    <li><strong>JavaScript libraries including Chart.js and D3.js</strong></li>
+                    <li><strong>HTML</strong></li>
+                    <li><strong>CSS</strong></li>
+                    <li><strong>Pandas</strong></li>
+                    <li><strong>PostgresSQl</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Tableau Project on City Bike Data</button>
+                <div class="collapsible-content">
+                <p>This project is based on the New York Citi Bike program. Each month, bike data is collected, organized, and made available on the Citi Bike webpage. The aim of this project is to develop a dashboard or sophisticated reporting system to better analyze and present this data.</p>
+                <ul>
+                    <li>You can access the Story and Dashboard <a href="https://public.tableau.com/app/profile/karuna.kesavan.kothandath/viz/MyFirstViz_17181383963610/Dashboard2?publish=yes"><b>here</b></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Cryptocurrency Price Change Prediction with Unsupervised Learning</button>
+                <div class="collapsible-content">
+                <p>The aim of this project is to use unsupervised learning to predict whether cryptocurrencies are influenced by 24-hour or 7-day price changes.<br>The key processes involved in this project are as follows: </p>
+                <ul>
+                    <li><strong> Pandas</strong></li>
+                    <li><strong>Hvplot</strong></li>
+                    <li><strong>Sklearn</strong></li>
+                    <li><strong>KMeans</strong></li>
+                    <li><strong>PCA</strong></li>
+                    <li><strong>StandardScaler</strong></li>
+                    <li><strong>Matplotlib</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Loan Risk Prediction with Supervised Learning</button>
+                <div class="collapsible-content">
+                <p>The aim of this project is to build a model that can identify the creditworthiness of borrowers.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong> Pandas</strong></li>
+                    <li><strong>NumPy</strong></li>
+                    <li><strong>Sklearn</strong></li>
+                    <li><strong>Confusion Matrix</strong></li>
+                    <li><strong>Classification Report</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Project on Neural Networks</button>
+                <div class="collapsible-content">
+                <p>This project aims to develop a binary classifier using neural networks to predict the likelihood of applicants' success if funded by the nonprofit foundation Alphabet Soup.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong> Pandas</strong></li>
+                    <li><strong>StandardScaler</strong></li>
+                    <li><strong>Sklearn</strong></li>
+                    <li><strong>TensorFlow</strong></li>
+                    <li><strong>KerasTuner</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">Project on Home Sales</button>
+                <div class="collapsible-content">
+                <p>aim of this project is to determine key metrics about home sales data using SparkSQL.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong> Pyspark</strong></li>
+                    <li><strong>SparkSQL</strong></li>
+                    <li><strong>Parquet </strong></li>
+                    <li><strong>Temporary view of DataFrame</strong></li>
+                    <li><strong>Caching</strong></li>
+                    <li><strong>Partitioning</strong></li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-item">
+                <button class="collapsible-button">California Housing Market prediction with Supervised Learning</button>
+                <div class="collapsible-content">
+                <p>The objective of this project is to develop a predictive model for California housing, creating an opportunity for the general audience to explore ideal locations and estimated prices.<br>The key processes involved in this project are as follows:</p>
+                <ul>
+                    <li><strong> Sklearn</strong></li>
+                    <li><strong>StandardScaler</strong></li>
+                    <li><strong>RandomForestRegressor </strong></li>
+                    <li><strong>Sklearn Metrics</strong></li>
+                    <li><strong>Pickle</strong></li>
+                    <li><strong>Matplotlib</strong></li>
+                    <li><strong>Flask</strong></li>
+                    <li><strong>HTML</strong></li>
+                    <li><strong>CSS</strong></li>
+                    <li><strong>Bootstrap</strong></li>
+                    <li><strong>JavaScript</strong></li>
+                    <li><strong>Tableau</strong></li>
+                </ul>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me via email at <a href="karunakesavan.k@gmail.com"><b>karunakesavan.k@gmail.com</b></a>.</p>
+            <p>Follow me on <a href="https://www.linkedin.com/in/karuna-kesavan-kothandath-ab5aa2183/" target="_blank"><b>LinkedIn</b></a> and check out my GitHub profile <a href="https://github.com/karurathi2010" target="_blank"><b>here</b></a>.</p>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.collapsible-button').forEach(button => {
+            // Store the original text of the button
+            const originalText = button.textContent;
+            
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    button.textContent = originalText; // Restore the original text
+                } else {
+                    content.style.display = 'block';
+                    button.textContent = originalText; // Set text to "Hide Details"
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
