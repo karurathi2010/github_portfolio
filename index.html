@@ -41,6 +41,16 @@
             text-decoration: none;
             font-weight: bold;
         }
+        .headshot {
+            flex-shrink: 0; 
+        }
+
+        .headshot img {
+            border-radius: 100%; 
+            width: 15%; 
+            height: 15%; 
+            object-fit: cover; 
+        }
         section {
             padding: 20px;
             background: #fff;
@@ -90,16 +100,31 @@
             background: #f9f9f9;
             border: 1px solid #ddd;
         }
+        .collapsible-button{
+            background-color: rgb(74, 75, 75);
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            
+
+        }
 
     </style>
 </head>
 <body>
 
     <header>
+        
         <div class="container">
-            <h1>Karuna Kesavan Kothandath</h1>
-            <nav>
+            <div class="header-content">
+                <div class="headshot">
+                    <img src="./image/head.jpg" alt="Headshot">
+                </div>
+                <h1>Karuna Kesavan Kothandath</h1>
+            </div>
+            <nav>    
                 <ul>
+                    
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -107,6 +132,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
 
@@ -156,12 +182,12 @@
                     To receive funding, the project must meet or exceed an initial goal, so many organizations dedicate considerable resources looking through old projects in an attempt to discover “the trick” to finding success.<br>In this project, organized and analyzed a database of 1,000 sample projects to uncover any hidden trends.<br>
                     The script automates several key processes:</p>
                     <ul>
-                    <li><strong>Conditional Formatting:</strong> Applies conditional formatting to highlight key trends and anomalies in the data.</li>
-                    <li><strong>Column Creation:</strong> Dynamically creates columns for various metrics based on the data retrieved.</li>
-                    <li><strong>Pivot Tables and Stacked Column Charts:</strong>Created a pivot table that counts how many campaigns were "successful," "failed," "canceled," or are currently "live" per category</li>
-                    <li><strong>Pivot Tables and Line Graphs</strong>Created a pivot chart line graph</li>
-                    <li><strong> Crowdfunding Goal Analysis:</strong>Computed calculations of percentages for projects that were successful, failed, or were canceled per goal range and Created a line chart showing the relationship between the goal’s amount and its chances at success, failure, or cancellation.</li>       
-                    <li><strong>Statistical Analysis :</strong>Computed calculations of the mean, median, min, max, variance, and stdev using Excel formulas.<br> A brief and compelling justification of whether the mean or median better summarizes the data.</li>
+                    <li><strong>Conditional Formatting:</strong></li>
+                    <li><strong>Column Creation:</strong></li>
+                    <li><strong>Pivot Tables and Stacked Column Charts:</strong></li>
+                    <li><strong>Pivot Tables and Line Graphs</strong></li>
+                    <li><strong> Crowdfunding Goal Analysis:</strong></li>       
+                    <li><strong>Statistical Analysis :</strong></li>
                     </ul>
                 </div>
             </div>
@@ -170,13 +196,13 @@
                 <div class="collapsible-content">
                 <p>This project involves analyzing multiple years of stock market data using VBA in Microsoft Excel. The script automates several key processes:</p>
                 <ul>
-                    <li><strong>Retrieval of Data:</strong> The VBA script loops through quarterly stock data, extracting and storing necessary values from each row.</li>
-                    <li><strong>Column Creation:</strong> Dynamically creates columns for various metrics based on the data retrieved.</li>
-                    <li><strong>Conditional Formatting:</strong> Applies conditional formatting to highlight key trends and anomalies in the data.</li>
-                    <li><strong>Calculated Values:</strong> Computes important financial indicators such as moving averages and volatility.</li>
-                    <li><strong>Looping Across Worksheet:</strong> Efficiently processes data across multiple worksheets, consolidating and analyzing information from different periods.</li>
+                    <li><strong>Retrieval of Data:</strong></li>
+                    <li><strong>Column Creation:</strong></li>
+                    <li><strong>Conditional Formatting:</strong></li>
+                    <li><strong>Calculated Values:</strong></li>
+                    <li><strong>Looping Across Worksheet:</strong></li>
                 </ul>
-                <p>The VBA automation significantly reduces manual data entry and analysis time, improving accuracy and efficiency in financial reporting.</p>
+                
                 </div>
             </div>
             <div class="project-item">
@@ -452,7 +478,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="karunakesavan.k@gmail.com"><b>karunakesavan.k@gmail.com</b></a>.</p>
+            <p>You can reach me via email at <b>karunakesavan.k@gmail.com</b></p>
             <p>Follow me on <a href="https://www.linkedin.com/in/karuna-kesavan-kothandath-ab5aa2183/" target="_blank"><b>LinkedIn</b></a> and check out my GitHub profile <a href="https://github.com/karurathi2010" target="_blank"><b>here</b></a>.</p>
         </div>
     </section>
